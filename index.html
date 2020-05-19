@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="rgb">
+        <label for="red">Vermelho (R): </label>
+        <input name="red" type="range" min="0" max="255" id="red" value="0" />
+        <input type="text" disabled id="outputRed" />
+      </div>
+      <div class="rgb">
+        <label for="green">Verde (G): </label>
+        <input
+          name="green"
+          type="range"
+          min="0"
+          max="255"
+          id="green"
+          value="0"
+        />
+        <input type="text" disabled id="outputGreen" />
+      </div>
+      <div class="rgb">
+        <label for="blue">Azul (B): </label>
+        <input name="blue" type="range" min="0" max="255" id="blue" value="0" />
+        <input type="text" disabled id="outputBlue" />
+      </div>
+    </form>
+
+    <div class="square">
+      <p>Este é o resultado:</p>
+      <span id="squareResult"></span>
+    </div>
+    <div></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
