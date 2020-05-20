@@ -1,16 +1,16 @@
 function changeColor() {
-  let red = document.getElementById('red').value;
-  let green = document.getElementById('green').value;
-  let blue = document.getElementById('blue').value;
+  var red = document.querySelector('#red').value;
+  var green = document.querySelector('#green').value;
+  var blue = document.querySelector('#blue').value;
 
-  let color = 'Rgb(' + red + ',' + green + ',' + blue + ')';
+  var color = 'Rgb(' + red + ',' + green + ',' + blue + ')';
 
-  document.getElementById('squareResult').style.background = color;
-  document.getElementById('outputRed').value = red;
-  document.getElementById('outputGreen').value = green;
-  document.getElementById('outputBlue').value = blue;
+  document.querySelector('#squareResult').style.background = color;
+  document.querySelector('#outputRed').value = red;
+  document.querySelector('#outputGreen').value = green;
+  document.querySelector('#outputBlue').value = blue;
 }
 
-document.getElementById('red').addEventListener('input', changeColor);
-document.getElementById('green').addEventListener('input', changeColor);
-document.getElementById('blue').addEventListener('input', changeColor);
+document.querySelector('#red').addEventListener('input', changeColor);
+document.querySelector('#green').addEventListener('input', changeColor);
+document.querySelector('#blue').addEventListener('input', changeColor);
